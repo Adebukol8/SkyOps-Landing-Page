@@ -1,0 +1,127 @@
+body{
+    font-family: 'Segoe UI' Tahoma, Geneva, Verdana, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    padding: 0;
+    color: #222831;
+    line-height: 1.6;
+}
+header{
+    background-color: #114b5f;
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    box-shadow: 0 2px 12px rgba(0, 0, 0,0.1);
+}
+header h1{
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+header p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: #e4fde1;
+}
+.section, section {
+    padding: 2.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background:white;
+    border-left: 6px solid #028090;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    animation: slideUp 1.5s ease-out;
+
+} 
+.section h2, section h3, section h4 {
+    color: #114B5F;
+    margin-top: 0;
+
+}
+p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+/*Animation*/
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-10PX);}
+    to {opacity: 1; transform: translateY(0);}
+}
+@keyframes slideUp{
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/*Hover Effect*/
+ h1:hover, h2:hover, h3:hover, h4:hover{
+    color: #38d9a9;
+    transition: color 0.3s ease-in-out, transform 0.3 ease;
+    transform: scale(1.05);
+}
+header p:hover{
+    background-color:#38d9a9;
+    color:#0a1d2c;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.4s ease; 
+}
+section:hover {
+    background-color: #f1fdfb;
+    border-left:4px solid #38d9a9;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-4px);
+    box-shadow: 0 0px 15px rgba(56, 217, 169, 0.2);
+    
+
+}
+section p:hover{
+    color:#222831;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/*Responsiveness for Tablets and Mobile */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+        font-size: 14px;
+    }
+    header{
+        padding:1.2em 0;
+    }
+    header h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    header p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .section h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    section {
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+    }
+    section h3, section h4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    section p {
+        font-size: 0.95rem;
+        text-align: justify;
+        line-height: 1.6;
+    }
+
+
+
+}
