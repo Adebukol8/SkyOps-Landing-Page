@@ -68,6 +68,16 @@ Used media queris to maintain readibility and accessibility across screen sizes
  This step ensured my local landing page files were properly hosted and tracked on Github.
 
 
+### Hosting Infomation
+During development and testing, the landing page was hosted on a public EC2 instance using its IPv4 address
+### Public Ip: http://54.155.125.177/
+Note: This Ip was temporarily used during deVelopment and may become unreachable once I shutdown my EC2  instance to avoid further billing.The final version of this project is deployed and accessible via Github pages:
+### LIVE URL: https://adebukol8.github.io/SkyOps-Landing-Page/
+
+
+
+
+
  ## Challenges and Learnings
 as a beginner, this project tested me in several ways:
 
