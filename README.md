@@ -1,14 +1,15 @@
-# Pitch Landing page
+# Project Documentation
 This document details the complete technical process of deploying and managing the dynamic landing page project on an AWS EC2 instance, including server setup,web server configuration, deployment and version control.
-## Project Setup
-1.Launching the AWS Management Console
--Logged into the AWS Management Console.
--Navigated to the EC2 dashboard and launched a new Ubuntu Server 22.04 LTS instance- with the name tag -Alt-Cloud-Project-01
--Selected an instance type optimized for free tier
--Used an existing SSH key pair for secure access.
--Configured security group inbound rules to allow:
-   SSH (port 22) for remote terminal access
-   HTTP (port 80) to serve web traffic
+
+# Project Setup
+* Launching the AWS Management Console.
+* Logged into the AWS Management Console.
+* Navigated to the EC2 dashboard and launched a new Ubuntu Server 22.04 LTS instance- with the name tag -Alt-Cloud-Project-01
+* Selected an instance type optimized for free tier
+* Used an existing SSH key pair for secure access.
+* Configured security group inbound rules to allow:
+   * SSH (port 22) for remote terminal access
+   * HTTP (port 80) to serve web traffic
    HTTPS (port 443) for secure connections 
 -Launched the instance and noted the public IP address for later use.
 
@@ -54,10 +55,10 @@ Used media queris to maintain readibility and accessibility across screen sizes
  -Confirmed proper file permissions with sudo chmod -R 755 /var/www.html
 
  ### Testing
- -Visitied the public IP in browser http://ec2-public ip
- -Confirmed:page loaded succesffully, animations and hover effects functioned correctly, fully responsive on mobile and tablet 
+ -Visited the public IP in browser http://ec2-public ip
+ -Confirmed:page loaded succesfully, animations and hover effects functioned correctly, fully responsive on mobile and tablet 
  ### Git and Github Version Control
- After buidling the landing page locally, i used Git Bash to intialise a Git repository and the fles to Github
+ After building the landing page locally, i used Git Bash to intialise a Git repository and the fles to Github
  Steps taken:
  *Initialized Git in the project folder-git init
  *Added all project files -git add .
@@ -68,7 +69,7 @@ Used media queris to maintain readibility and accessibility across screen sizes
  This step ensured my local landing page files were properly hosted and tracked on Github.
 
 
-### Hosting Infomation
+### Hosting Information
 During development and testing, the landing page was hosted on a public EC2 instance using its IPv4 address
 ### Public Ip: http://54.155.125.177/
 Note: This Ip was temporarily used during deVelopment and may become unreachable once I shutdown my EC2  instance to avoid further billing.The final version of this project is deployed and accessible via Github pages:
@@ -79,7 +80,7 @@ Note: This Ip was temporarily used during deVelopment and may become unreachable
 
 
  ## Challenges and Learnings
-as a beginner, this project tested me in several ways:
+As a beginner, this project tested me in several ways:
 
 - **Git Conflicts and Workflow**  
   At first, pushing to the GitHub repository was blocked due to conflicts with existing remote files (like the README). I learned how to fetch, pull, and rebase properly to keep my commit history clean and avoid overwriting others work.
@@ -94,7 +95,7 @@ as a beginner, this project tested me in several ways:
   Using VS Code's Remote SSH extension allowed me to develop directly on the server. This experience was new to me and taught me the benefits and limitations of remote development workflows.
 
 - **Honest Reflection**  
-  This project pushed me out of my comfort zone in both front-end design and deployment. I improved my problem-solving skills, patience with version control, and learned to write cleaner, more maintainable CSS.
+  This project pulled me out of my comfort zone in both front-end design and deployment. I improved my problem-solving skills, patience with version control, and learned to write cleaner code and proper documentation of each step.
 
 ---
 
